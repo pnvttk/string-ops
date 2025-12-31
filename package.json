@@ -1,9 +1,9 @@
 {
-	"name": "string-formatter",
+	"name": "string-ops",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://pnv.github.io/string-formatter/",
+	"homepage": "https://pnvttk.github.io/string-ops/",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
