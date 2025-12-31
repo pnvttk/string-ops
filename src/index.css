@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+	--color-primary: #ec4899;
+	--color-secondary: #8b5cf6;
+	--color-accent: #3b82f6;
+	--color-background: #0b0f1a;
+	--color-surface: rgba(15, 23, 42, 0.6);
+	--color-border: rgba(255, 255, 255, 0.08);
+
+	--font-sans: "Inter", "Outfit", system-ui, -apple-system, sans-serif;
+
+	--shadow-glow: 0 0 20px rgba(236, 72, 153, 0.1);
+}
+
+@layer base {
+	body {
+		@apply bg-background text-slate-200 antialiased min-h-screen selection:bg-primary/30 selection:text-white font-sans overflow-x-hidden;
+		background-image:
+			radial-gradient(circle at 0% 0%, rgba(236, 72, 153, 0.1) 0%, transparent 40%),
+			radial-gradient(circle at 100% 100%, rgba(139, 92, 246, 0.1) 0%, transparent 40%);
+	}
+}
+
+@layer components {
+	.glass-card {
+		@apply bg-surface backdrop-blur-2xl border border-border rounded-3xl shadow-2xl;
+	}
+}
